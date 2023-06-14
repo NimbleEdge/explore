@@ -11,19 +11,19 @@ function Homepage() {
 
       <div className="">
         <div className="absolute center-absolute z-20">
-          <p className="text-7xl text-white text-center font-extrabold">
+          <p className="text-7xl text-white text-center font-extrabold leading-tight">
             SUPERCHARGE
             <br />
             YOUR APPS WITH
             <br />
-            NIMBLEEDGE
+            <span className="nimbleedge-gradient">NIMBLEEDGE</span>
           </p>
           <p className="text-sm text-secondaryTextColor text-center font-bold mt-8">
             Proceed to witness firsthand how Nimbleedge empowers applications to
             achieve maximum efficiency
           </p>
         </div>
-        <p className="z-20 text-secondaryTextColor text-lg absolute left-1/2 bottom-28 -translate-x-1/2 tracking-widest">
+        <p className="z-20 text-secondaryTextColor text-lg absolute left-1/2 bottom-28 -translate-x-1/2 tracking-widest cursor-pointer">
           PROCEED
         </p>
         <div className="absolute rotate-180 left-16 top-1/2 -translate-y-1/2">

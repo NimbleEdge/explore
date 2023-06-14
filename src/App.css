@@ -49,3 +49,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.nimbleedge-gradient {
+  background: linear-gradient(90deg, #6565ff 19.62%, #fa00ff 64.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
