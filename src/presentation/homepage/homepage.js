@@ -8,11 +8,9 @@ function Homepage() {
   return (
     <div className="bg-violet-950 w-screen h-screen">
       <section
-        className={
-          triggerAnimation
-            ? "section-1 "
-            : "" + "bg-backgroundColorLottie relative"
-        }
+        className={`bg-backgroundColorLottie relative ${
+          triggerAnimation ? "section-1" : ""
+        }`}
       >
         <div className="bg-backgroundColor absolute w-screen h-screen opacity-50 z-10 rounded-3xl"></div>
         <Lottie
@@ -69,7 +67,26 @@ function Homepage() {
           className={
             "section-3 bg-backgroundColor h-screen w-screen absolute top-0 left-0 "
           }
-        ></section>
+        >
+          <div className="top-1/2 -translate-y-1/2 relative grid gap-2 grid-cols-2 grid-rows-2">
+            <img
+              className="max-w-xs rounded-2xl justify-self-end"
+              src="/assets/images/ecom-usecase.jpg"
+            ></img>
+            <img
+              className="max-w-xs rounded-2xl justify-self-start"
+              src="/assets/images/gaming-usecase.jpg"
+            ></img>
+            <img
+              className="max-w-xs rounded-2xl justify-self-end"
+              src="/assets/images/media-usecase.jpg"
+            ></img>
+            <img
+              className="max-w-xs rounded-2xl justify-self-start"
+              src="/assets/images/fintech-usecase.jpg"
+            ></img>
+          </div>
+        </section>
       )}
     </div>
   );
