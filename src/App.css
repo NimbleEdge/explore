@@ -60,18 +60,10 @@
 
 /* TEXT ANIMATION */
 
-/* .container {
-  width: 400px;
-  height: 220px;
-  position: relative;
-} */
-
 .title-local span,
 .subtitle-local span {
   width: 100%;
   float: left;
-  /* -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%); */
   transform: translateY(-80px);
   opacity: 0;
   animation-name: titleAnimation;
@@ -109,14 +101,11 @@
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
   transform: translateY(-20px);
   opacity: 0;
-  animation-name: titleAnimation;
+  animation-name: fillerTextAnimation;
   animation-timing-function: ease;
   animation-duration: 1.8s;
-  animation-delay: 4.8s;
+  animation-delay: 0.8s;
   -webkit-animation-fill-mode: both;
-}
-
-.filler-title-local span {
 }
 
 /* SHINY TEXT */
@@ -136,6 +125,33 @@
 }
 
 @keyframes titleAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    /* -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%); */
+  }
+}
+
+@keyframes fillerTextAnimation {
   0% {
     transform: translateY(-20px);
     opacity: 0;
@@ -191,21 +207,21 @@
   animation: scale 3s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-delay: 4s;
+  animation-delay: 0;
 }
 
 .section-2 {
   animation: slide-up 3s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  animation-delay: 4.2s;
+  animation-delay: 0.2s;
 }
 
 .section-3 {
   animation: de-scale 4s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-delay: 4s;
+  animation-delay: 0;
 }
 
 @keyframes scale {
