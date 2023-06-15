@@ -102,6 +102,39 @@
   animation-delay: 2s;
 }
 
+.filler-title-local span {
+  width: 100%;
+  float: left;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  transform: translateY(-20px);
+  opacity: 0;
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 1.8s;
+  animation-delay: 4.8s;
+  -webkit-animation-fill-mode: both;
+}
+
+.filler-title-local span {
+}
+
+/* SHINY TEXT */
+.fade-in-button {
+  animation: fade-in 5s;
+}
+
+.shiny-button-local {
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 2s linear infinite,
+    fade-in 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
+}
+
 @keyframes titleAnimation {
   0% {
     transform: translateY(-20px);
@@ -124,25 +157,9 @@
   100% {
     transform: translateY(0px);
     opacity: 1;
-    /* -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
-    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%); */
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
   }
-}
-
-/* SHINY TEXT */
-.fade-in-button {
-  animation: fade-in 5s;
-}
-
-.shiny-button-local {
-  overflow: hidden;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 2s linear infinite,
-    fade-in 6s cubic-bezier(0.075, 0.82, 0.165, 1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
 }
 
 @keyframes animate {
@@ -166,5 +183,80 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* scale animation */
+.section-1 {
+  animation: scale 3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 4s;
+}
+
+.section-2 {
+  animation: slide-up 3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  animation-delay: 4.2s;
+}
+
+.section-3 {
+  animation: de-scale 4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 4s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  25%,
+  50%,
+  75% {
+    transform: scale(0.9);
+    border-radius: 24px;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes de-scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+    border-radius: 24px;
+  }
+
+  25%,
+  50%,
+  75% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+    border-radius: 0px;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translate(0, 100%);
+  }
+
+  25%,
+  50%,
+  75% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, -100%);
   }
 }

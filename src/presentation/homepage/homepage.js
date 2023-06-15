@@ -5,11 +5,14 @@ import pulse from "../../assets/animations/pulsating.json";
 
 function Homepage() {
   return (
-    <div className="bg-backgroundColorLottie relative">
-      <div className="bg-backgroundColor absolute w-screen h-screen opacity-50 z-10"></div>
-      <Lottie className="h-screen" animationData={breathingShape} loop={true} />
-
-      <div className="">
+    <div className="bg-violet-950 w-screen h-screen">
+      <section className="section-1 bg-backgroundColorLottie relative">
+        <div className="bg-backgroundColor absolute w-screen h-screen opacity-50 z-10 rounded-3xl"></div>
+        <Lottie
+          className="h-screen"
+          animationData={breathingShape}
+          loop={true}
+        />
         <div className="absolute container center-absolute z-20">
           <p className="title-local text-8xl text-white text-center font-bold leading-none">
             <span>SUPERCHARGE</span>
@@ -35,7 +38,15 @@ function Homepage() {
             Bandwidth available
           </p>
         </div>
-      </div>
+      </section>
+
+      <section className="section-2 w-screen h-screen bg-red-500 z-50 absolute top-0 left-0 rounded-3xl">
+        <p className="text-6xl filler-title-local text-center m-40">
+          <span>select the usecase that fits the best</span>
+        </p>
+      </section>
+
+      <section className="section-3 bg-backgroundColor h-screen w-screen absolute top-0 left-0 "></section>
     </div>
   );
 }
