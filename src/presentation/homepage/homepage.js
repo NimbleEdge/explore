@@ -10,20 +10,20 @@ function Homepage() {
       <Lottie className="h-screen" animationData={breathingShape} loop={true} />
 
       <div className="">
-        <div className="absolute center-absolute z-20">
-          <p className="text-7xl text-white text-center font-extrabold leading-tight_no">
-            SUPERCHARGE
-            <br />
-            YOUR APPS WITH
-            <br />
+        <div className="absolute container center-absolute z-20">
+          <p className="title-local text-8xl text-white text-center font-bold leading-none">
+            <span>SUPERCHARGE</span>
+            <span>YOUR APPS WITH</span>
             <span className="nimbleedge-gradient">NIMBLEEDGE</span>
           </p>
-          <p className="text-sm text-secondaryTextColor text-center font-bold mt-8">
-            Proceed to witness firsthand how Nimbleedge empowers applications to
-            achieve maximum efficiency
+          <p className="subtitle-local text-sm text-secondaryTextColor text-center font-bold leading-tight">
+            <span className="mt-6">
+              Proceed to witness firsthand how Nimbleedge empowers applications
+              to achieve maximum efficiency
+            </span>
           </p>
         </div>
-        <p className="z-20 text-secondaryTextColor text-lg absolute left-1/2 bottom-28 -translate-x-1/2 tracking-widest cursor-pointer">
+        <p className="shiny-button-local z-20 text-secondaryTextColor text-lg absolute left-1/2 bottom-28 -translate-x-1/2 tracking-widest cursor-pointer">
           PROCEED
         </p>
         <div className="absolute rotate-180 left-16 top-1/2 -translate-y-1/2">
