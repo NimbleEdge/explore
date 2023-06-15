@@ -6,12 +6,12 @@ import pulse from "../../assets/animations/pulsating.json";
 function Homepage() {
   return (
     <div className="bg-backgroundColorLottie relative">
-      <div className="bg-backgroundColor absolute w-screen h-screen opacity-60 z-10"></div>
+      <div className="bg-backgroundColor absolute w-screen h-screen opacity-50 z-10"></div>
       <Lottie className="h-screen" animationData={breathingShape} loop={true} />
 
       <div className="">
         <div className="absolute center-absolute z-20">
-          <p className="text-7xl text-white text-center font-extrabold leading-tight">
+          <p className="text-7xl text-white text-center font-extrabold leading-tight_no">
             SUPERCHARGE
             <br />
             YOUR APPS WITH
@@ -32,7 +32,7 @@ function Homepage() {
             style={{ writingMode: "vertical-rl" }}
             className="text-secondaryTextColor text-xs mx-auto"
           >
-            Bandwidth is available for the demonstration
+            Bandwidth available
           </p>
         </div>
       </div>
