@@ -5,8 +5,9 @@ import pulse from "../../assets/animations/pulsating.json";
 
 function Homepage() {
   const [triggerAnimation, setTriggerAnimation] = useState(false);
+
   return (
-    <div className="bg-violet-950 w-screen h-screen">
+    <div className="bg-slate-800 w-screen h-screen">
       <section
         className={`bg-backgroundColorLottie relative ${
           triggerAnimation ? "section-1" : ""
@@ -68,23 +69,58 @@ function Homepage() {
             "section-3 bg-backgroundColor h-screen w-screen absolute top-0 left-0 "
           }
         >
-          <div className="top-1/2 -translate-y-1/2 relative grid gap-2 grid-cols-2 grid-rows-2">
-            <img
-              className="max-w-xs rounded-2xl justify-self-end"
-              src="/assets/images/ecom-usecase.jpg"
-            ></img>
-            <img
-              className="max-w-xs rounded-2xl justify-self-start"
-              src="/assets/images/gaming-usecase.jpg"
-            ></img>
-            <img
-              className="max-w-xs rounded-2xl justify-self-end"
-              src="/assets/images/media-usecase.jpg"
-            ></img>
-            <img
-              className="max-w-xs rounded-2xl justify-self-start"
-              src="/assets/images/fintech-usecase.jpg"
-            ></img>
+          <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 relative grid gap-2 grid-cols-2 grid-rows-2">
+            <div className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end">
+              <img
+                src="/assets/images/ecom-usecase.jpg"
+                className="w-full h-full rounded-2xl choice-cell-img"
+              />
+              <div className="choice-cell-hidden">
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-medium z-10">
+                  E-COM
+                </p>
+                <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
+              </div>
+            </div>
+
+            <div className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-start">
+              <img
+                src="/assets/images/gaming-usecase.jpg"
+                className="w-full h-full rounded-2xl choice-cell-img"
+              />
+              <div className="choice-cell-hidden">
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-medium z-10">
+                  GAMING
+                </p>
+                <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
+              </div>
+            </div>
+
+            <div className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end">
+              <img
+                src="/assets/images/media-usecase.jpg"
+                className="w-full h-full rounded-2xl choice-cell-img"
+              />
+              <div className="choice-cell-hidden">
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-medium z-10">
+                  MEDIA
+                </p>
+                <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
+              </div>
+            </div>
+
+            <div className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-start">
+              <img
+                src="/assets/images/fintech-usecase.jpg"
+                className="w-full h-full rounded-2xl choice-cell-img"
+              />
+              <div className="choice-cell-hidden">
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-semibold z-10">
+                  FINTECH
+                </p>
+                <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
+              </div>
+            </div>
           </div>
         </section>
       )}

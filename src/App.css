@@ -277,3 +277,76 @@
     transform: translate(0, -100%);
   }
 }
+
+.choice-cell-hidden {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.choice-cell {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.choice-cell:hover .choice-cell-hidden {
+  animation: un-fade 1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.choice-cell:hover .choice-cell-img {
+  animation: hover-cell 1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes hover-cell {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes un-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.q-1 {
+  animation-delay: 10s;
+  animation: fade 6s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.q-2 {
+  animation-delay: 10s;
+  animation: un-fade 6s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.question-switch {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.parent section {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
