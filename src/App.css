@@ -307,12 +307,12 @@
 
 .choice-cell-hidden {
   opacity: 0;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .choice-cell {
   overflow: hidden;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .choice-cell:hover .choice-cell-hidden {
@@ -378,6 +378,8 @@
   grid-column-start: 1;
 }
 
+/* LOADEr */
+
 .progress-bar {
   position: absolute;
   top: 50%;
@@ -391,6 +393,7 @@
   width: 100vw;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 0px;
+  /* background-color: #18191b;x */
 }
 
 .count {

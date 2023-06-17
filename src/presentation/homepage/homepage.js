@@ -63,7 +63,7 @@ function Homepage() {
           onClick={() => {
             setTriggerAnimation(true);
           }}
-          className="shiny-button-local z-20 text-secondaryTextColor text-lg absolute left-1/2 bottom-28 -translate-x-1/2 tracking-widest cursor-pointer"
+          className="link shiny-button-local z-20 text-secondaryTextColor text-lg absolute left-1/2 bottom-28 -translate-x-1/2 tracking-widest cursor-pointer"
         >
           PROCEED
         </p>
@@ -98,7 +98,7 @@ function Homepage() {
         >
           <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 relative grid gap-2 grid-cols-2 grid-rows-2">
             <div
-              className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end"
+              className="link choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end"
               onClick={() => {
                 setTriggerAnimation2(true);
               }}
@@ -177,7 +177,7 @@ function Homepage() {
         >
           <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 relative grid gap-2 grid-cols-2 grid-rows-2">
             <div
-              className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end"
+              className="link choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end"
               onClick={() => setTriggerAnimation3(true)}
             >
               <img
