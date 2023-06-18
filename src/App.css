@@ -406,3 +406,71 @@
   margin-top: -1.33em;
   color: #313335;
 }
+
+.playground {
+}
+
+.emulator {
+  max-width: 280px;
+}
+
+/* SyntaxHighlighter {
+  position: relative;
+  margin: 0.2rem;
+  font-family: monospace;
+  display: block;
+  white-space: pre;
+} */
+
+/* CODEPAD */
+/* code {
+  max-width: 20rem;
+  color: #eff;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  position: relative;
+  border-radius: 0.25rem;
+  counter-reset: step;
+  counter-increment: step 0;
+  transition: background 0.3s;
+  outline: none;
+}
+
+SyntaxHighlighter {
+  position: relative;
+  margin: 0.2rem;
+  font-family: monospace;
+  display: block;
+  white-space: pre;
+}
+code p::before {
+  top: 0;
+  margin-right: 16px;
+  color: #50646d;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: counter(step);
+  counter-increment: step;
+} */
+
+pre {
+  font-family: monospace;
+}
+
+.playground {
+  animation: un-fade 1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+pre code {
+  font-family: monospace;
+  padding: 12px 8px;
+  display: block;
+  overflow-x: auto;
+  background-color: #18191b;
+  border-radius: 12px;
+  -webkit-text-size-adjust: none;
+}

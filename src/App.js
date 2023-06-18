@@ -15,7 +15,7 @@ function App() {
         innerScale={0.7}
         outerScale={2.25}
         showSystemCursor={false}
-        trailingSpeed={10}
+        trailingSpeed={8}
         clickables={[
           "a",
           'input[type="text"]',
