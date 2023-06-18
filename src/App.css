@@ -455,10 +455,6 @@ code p::before {
   counter-increment: step;
 } */
 
-pre {
-  font-family: monospace;
-}
-
 .playground {
   animation: un-fade 1s;
   animation-fill-mode: both;
@@ -466,11 +462,14 @@ pre {
 }
 
 pre code {
-  font-family: monospace;
   padding: 12px 8px;
   display: block;
   overflow-x: auto;
   background-color: #18191b;
   border-radius: 12px;
   -webkit-text-size-adjust: none;
+}
+
+code span {
+  font-family: monospace;
 }
