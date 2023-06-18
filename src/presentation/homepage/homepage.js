@@ -338,7 +338,7 @@ function Homepage() {
           }, 300);
           setTimeout(() => {
             setTriggerAnimation5(true);
-          }, 1000);
+          }, 800);
         }
       })();
     }
