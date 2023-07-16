@@ -19,6 +19,7 @@ module.exports = {
         successColor: "#009F06",
         filterBackgroundColor: "hsl(220,6,10)",
         backgroundColorLottie: "#222222",
+	pitchBlack: "#000000",
       },
     },
   },
