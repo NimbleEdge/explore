@@ -394,7 +394,7 @@ function Homepage() {
           {triggerAnimation && (
             <section
               className={
-                "section-2 w-screen h-screen bg-red-500 z-50 absolute top-0 left-0 rounded-3xl"
+                "section-2 w-screen h-screen bg-purple-600 z-50 absolute top-0 left-0 rounded-3xl"
               }
             >
               <p className="text-6xl filler-title-local text-center m-40">
@@ -473,7 +473,7 @@ function Homepage() {
           {triggerAnimation2 && (
             <section
               className={
-                "section-2 w-screen h-screen bg-red-500 z-50 absolute top-0 left-0 rounded-3xl"
+                "section-2 w-screen h-screen bg-purple-600 z-50 absolute top-0 left-0 rounded-3xl"
               }
             >
               <p className="text-6xl filler-title-local text-center m-40">
