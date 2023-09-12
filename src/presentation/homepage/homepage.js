@@ -345,7 +345,7 @@ function Homepage() {
   }, [triggerAnimation3]);
 
   return (
-    <div className="bg-slate-800 w-screen h-screen">
+    <div className="bg-slate-800 w-screen h-[calc(100dvh)] inset-0">
       {!triggerAnimation5 && (
         <div>
           <section
@@ -353,22 +353,22 @@ function Homepage() {
               triggerAnimation ? "section-1" : ""
             }`}
           >
-            <div className="bg-backgroundColor absolute w-screen h-screen opacity-50 z-10 rounded-3xl"></div>
+            <div className="bg-backgroundColor absolute w-screen h-[calc(100dvh)] opacity-50 z-10 rounded-3xl"></div>
             <Lottie
-              className="h-screen"
+              className="h-[calc(100dvh)]"
               animationData={breathingShape}
               loop={true}
             />
             <div className="absolute container center-absolute z-20">
-              <p className="title-local text-8xl text-white text-center font-bold leading-none">
+              <p className="title-local text-3xl lg:text-6xl xl:text-8xl text-white text-center font-bold leading-none">
                 <span>SUPERCHARGE</span>
                 <span>YOUR APPS WITH</span>
                 <span className="nimbleedge-gradient">NIMBLEEDGE</span>
               </p>
-              <p className="subtitle-local text-sm text-secondaryTextColor text-center font-bold leading-tight">
-                <span className="mt-6">
+              <p className="subtitle-local mx-6 text-xs lg:text-sm text-secondaryTextColor text-center font-bold leading-tight">
+                <span className="mt-3 lg:mt-6">
                   Proceed to witness firsthand how Nimbleedge empowers
-                  applications to achieve maximum efficiency
+                  applications to achieve maximum efficiency.
                 </span>
               </p>
             </div>
@@ -380,7 +380,7 @@ function Homepage() {
             >
               PROCEED
             </p>
-            <div className="absolute rotate-180 left-16 top-1/2 -translate-y-1/2">
+            {/* <div className="absolute rotate-180 left-16 top-1/2 -translate-y-1/2">
               <Lottie className="h-8 w-8" animationData={pulse}></Lottie>
               <p
                 style={{ writingMode: "vertical-rl" }}
@@ -388,17 +388,17 @@ function Homepage() {
               >
                 Bandwidth available
               </p>
-            </div>
+            </div> */}
           </section>
 
           {triggerAnimation && (
             <section
               className={
-                "section-2 w-screen h-screen bg-purple-600 z-50 absolute top-0 left-0 rounded-3xl"
+                "section-2 w-screen h-[calc(100dvh)] bg-purple-600 z-50 absolute top-0 left-0 rounded-3xl"
               }
             >
-              <p className="text-6xl filler-title-local text-center m-40">
-                <span>select the usecase that fits the best</span>
+              <p className="text-3xl font-medium lg:text-6xl filler-title-local text-center mx-6 my-16 lg:my-40 lg:mx-40">
+                <span>select your preferred mobile platform</span>
               </p>
             </section>
           )}
@@ -407,61 +407,37 @@ function Homepage() {
             <section
               className={`${
                 triggerAnimation2 ? "section-1" : "section-3"
-              } bg-backgroundColor h-screen w-screen absolute top-0 left-0`}
+              } bg-backgroundColor h-[calc(100dvh)] w-screen absolute top-0 left-0`}
             >
-              <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 relative grid gap-2 grid-cols-2 grid-rows-2">
+              <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 relative grid gap-2 grid-cols-2 grid-rows-1">
                 <div
                   className="link choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end"
                   onClick={() => {
-                    setTriggerAnimation2(true);
+                    // setTriggerAnimation2(true);
+                    window.location.href="https://google.com";
                   }}
                 >
                   <img
-                    src="/assets/images/ecom-usecase.jpg"
+                    src="/assets/images/play-store.jpg"
                     className="w-full h-full rounded-2xl choice-cell-img"
                   />
                   <div className="choice-cell-hidden">
-                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-medium z-10">
-                      E-COM
+                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm lg:text-3xl text-white font-medium z-10">
+                      ANDROID
                     </p>
                     <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
                   </div>
                 </div>
+
 
                 <div className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-start">
                   <img
-                    src="/assets/images/gaming-usecase.jpg"
+                    src="/assets/images/app-store.jpg"
                     className="w-full h-full rounded-2xl choice-cell-img"
                   />
                   <div className="choice-cell-hidden">
-                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-medium z-10">
-                      GAMING
-                    </p>
-                    <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
-                  </div>
-                </div>
-
-                <div className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end">
-                  <img
-                    src="/assets/images/media-usecase.jpg"
-                    className="w-full h-full rounded-2xl choice-cell-img"
-                  />
-                  <div className="choice-cell-hidden">
-                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-medium z-10">
-                      MEDIA
-                    </p>
-                    <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
-                  </div>
-                </div>
-
-                <div className="choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-start">
-                  <img
-                    src="/assets/images/fintech-usecase.jpg"
-                    className="w-full h-full rounded-2xl choice-cell-img"
-                  />
-                  <div className="choice-cell-hidden">
-                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white font-semibold z-10">
-                      FINTECH
+                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm lg:text-3xl text-white font-semibold z-10">
+                      IOS
                     </p>
                     <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
                   </div>
@@ -473,7 +449,7 @@ function Homepage() {
           {triggerAnimation2 && (
             <section
               className={
-                "section-2 w-screen h-screen bg-purple-600 z-50 absolute top-0 left-0 rounded-3xl"
+                "section-2 w-screen h-[calc(100dvh)] bg-purple-600 z-50 absolute top-0 left-0 rounded-3xl"
               }
             >
               <p className="text-6xl filler-title-local text-center m-40">
@@ -486,7 +462,7 @@ function Homepage() {
             <section
               className={`${
                 triggerAnimation3 ? "section-1" : "section-3"
-              } bg-backgroundColor h-screen w-screen absolute top-0 left-0`}
+              } bg-backgroundColor h-[calc(100dvh)] w-screen absolute top-0 left-0`}
             >
               <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 relative grid gap-2 grid-cols-2 grid-rows-2">
                 <div
@@ -559,7 +535,7 @@ function Homepage() {
             <section
               className={`${
                 triggerAnimation4 ? "expand-to-emulator-screen" : "section-4"
-              } bg-backgroundColor h-screen w-screen absolute top-0 left-0`}
+              } bg-backgroundColor h-[calc(100dvh)] w-screen absolute top-0 left-0`}
             >
               <div className="progress-bar z-50"></div>
               <h1 className="count"></h1>
@@ -569,7 +545,7 @@ function Homepage() {
       )}
 
       {triggerAnimation5 && (
-        <div className="w-screen h-screen bg-secondaryBackgroundColor relative">
+        <div className="w-screen h-[calc(100dvh)] bg-secondaryBackgroundColor relative">
           <div className="playground flex bg-backgroundColor absolute m-10 left-0 right-0 top-0 bottom-0 rounded-2xl divide-x divide-gray-600">
             <div className="code-pad h-full bg-backgroundColor flex-1 rounded-l-2xl overflow-y-scroll">
               <SyntaxHighlighter
