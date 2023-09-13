@@ -414,7 +414,7 @@ function Homepage() {
                   className="link choice-cell container w-1/2 relative max-w-xs rounded-2xl justify-self-end"
                   onClick={() => {
                     // setTriggerAnimation2(true);
-                    window.location.href="https://google.com";
+                    window.location.href="https://play.google.com/store/apps/details?id=com.nimbleedge.nimbleexperience";
                   }}
                 >
                   <img
