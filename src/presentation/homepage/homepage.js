@@ -367,8 +367,7 @@ function Homepage() {
               </p>
               <p className="subtitle-local mx-6 text-xs lg:text-sm text-secondaryTextColor text-center font-bold leading-tight">
                 <span className="mt-3 lg:mt-6">
-                  Proceed to witness firsthand how Nimbleedge empowers
-                  applications to achieve maximum efficiency.
+                Hyper-scaling Real-time Personalization with Privacy via on-device computing.
                 </span>
               </p>
             </div>
@@ -436,8 +435,8 @@ function Homepage() {
                     className="w-full h-full rounded-2xl choice-cell-img"
                   />
                   <div className="choice-cell-hidden">
-                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm lg:text-3xl text-white font-semibold z-10">
-                      IOS
+                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm lg:text-3xl text-white font-semibold z-10 text-center">
+                      COMING SOON
                     </p>
                     <div className="bg-black opacity-80 w-full h-full absolute rounded-2xl top-0 left-0" />
                   </div>
